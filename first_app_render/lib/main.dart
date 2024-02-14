@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp() as Widget);
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class StatelessWidget {}
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
